@@ -11,10 +11,10 @@ body {
     width: 100%;
     height: 100vh;
     background-color: aliceblue;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -26,37 +26,88 @@ h1 {
     text-transform: uppercase;
     color: hsl(0, 0%, 95%);
 }
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
 p {
     font-family: 'Lexend Deca', sans-serif;
     color: hsla(0, 0%, 100%, 0.75);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     line-height: 1.7;
+    max-width: 100%;
+}
+@media (min-width: 768px) {
+    p {
+        margin-bottom: 5rem;
+        font-size: 1.3rem;
+    }
+}
+a {
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    font-size: 90%;
+}
+@media (min-width: 768px) {
+    a {
+        font-size: 90%;
+    }
 }
 
 /* Layout */
 
 main {
-    margin: 3em auto;
     width: 90%;
-    padding: 0 1.5em;
+    border-radius: 30px;
 }
+@media (min-width: 768px) {
+    main {
+        width: 60%;
+        max-width: 1125px;
+        height: auto;
+        display: flex;
+    }
+}
+
 .cont-1 {
     background-color:  hsl(31, 77%, 52%);
-    color: white;
     padding: 3em;
-}
-button {
-    padding: .7em 1.9em;
-    border-radius: 30px;
-    border: 0 solid transparent;
 }
 .cont-2 {
     background-color: hsl(184, 100%, 22%);
-    color: white;
     padding: 3em;
 }
 .cont-3 {
     background-color: hsl(179, 100%, 13%);
-    color: white;
     padding: 3em;
+}
+
+
+
+
+
+/* button */
+
+a {
+    padding: .7em 1.9em;
+    border-radius: 30px;
+    border: 0 solid transparent;
+    background-color: beige;
+    font-size: 90%;
+}
+.btn-orng {
+    color: hsl(31, 77%, 52%); 
+}
+.btn-grn {
+    color: hsl(184, 100%, 22%); 
+}
+.btn-dk-grn {
+    color: hsl(179, 100%, 13%); 
+}
+a:hover,
+a:focus {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 1.5px solid hsl(0, 0%, 95%);
 }
