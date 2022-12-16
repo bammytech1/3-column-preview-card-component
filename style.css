@@ -7,6 +7,10 @@
 html {
     font-size: 15px;
 }
+img {
+    display: block;
+    margin-bottom: 2.5em;
+}
 body {
     width: 100%;
     height: 100vh;
@@ -28,61 +32,84 @@ h1 {
 }
 @media (min-width: 768px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
+        margin-bottom: 1em;
     }
 }
 p {
     font-family: 'Lexend Deca', sans-serif;
     color: hsla(0, 0%, 100%, 0.75);
     margin-bottom: 3rem;
-    line-height: 1.7;
+    line-height: 1.6;
     max-width: 100%;
 }
 @media (min-width: 768px) {
     p {
         margin-bottom: 5rem;
         font-size: 1.3rem;
+        max-width: 100%;
     }
 }
 a {
     font-family: 'Lexend Deca', sans-serif;
     text-decoration: none;
     font-size: 90%;
+    padding: .4em 1em;
+
 }
 @media (min-width: 768px) {
     a {
-        font-size: 90%;
+        font-size: 1rem;
+        padding: .7em 1.9em;
+        position: absolute;
+        bottom: 4em;
     }
 }
 
 /* Layout */
 
 main {
+    max-width: 1200px;
     width: 90%;
     border-radius: 30px;
 }
 @media (min-width: 768px) {
     main {
-        width: 60%;
-        max-width: 1125px;
+        width: 75%;
+        max-width: 1200px;
         height: auto;
         display: flex;
+        min-height: 60vh;
     }
 }
 
 .cont-1 {
     background-color:  hsl(31, 77%, 52%);
     padding: 3em;
+    border-radius: 7px 7px 0 0;
+    position: relative;
 }
 .cont-2 {
     background-color: hsl(184, 100%, 22%);
     padding: 3em;
+    position: relative;
 }
 .cont-3 {
     background-color: hsl(179, 100%, 13%);
     padding: 3em;
+    border-radius: 0 0 7px 7px;
+    position: relative;
 }
 
+@media (min-width: 768px) {
+    .cont-1 {
+        border-radius: 7px 0 0 7px;
+    }
+    .cont-3 {
+        border-radius: 0 7px 7px 0;
+
+    }
+}
 
 
 
@@ -94,7 +121,6 @@ a {
     border-radius: 30px;
     border: 0 solid transparent;
     background-color: beige;
-    font-size: 90%;
 }
 .btn-orng {
     color: hsl(31, 77%, 52%); 
