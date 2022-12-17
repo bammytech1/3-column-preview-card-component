@@ -71,7 +71,8 @@ a {
 main {
     max-width: 1200px;
     width: 90%;
-    border-radius: 30px;
+    margin: 3em;
+    max-height: 90vh;
 }
 @media (min-width: 768px) {
     main {
@@ -79,7 +80,7 @@ main {
         max-width: 1200px;
         height: auto;
         display: flex;
-        min-height: 60vh;
+        height: 90%;
     }
 }
 
