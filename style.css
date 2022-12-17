@@ -71,8 +71,8 @@ a {
 main {
     max-width: 1200px;
     width: 90%;
-    margin: 3em;
-    max-height: 90vh;
+    padding: 0 2.2em;
+    max-height: 90%;
 }
 @media (min-width: 768px) {
     main {
