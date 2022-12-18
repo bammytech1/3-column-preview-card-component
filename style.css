@@ -72,7 +72,6 @@ main {
     width: 100%;
     padding: 0 3em;
     max-height: 90%;
-    margin: 0 auto;
 }
 @media (min-width: 768px) {
     main {
